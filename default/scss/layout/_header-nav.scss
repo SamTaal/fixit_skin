@@ -98,7 +98,6 @@
 @include bp(min-width, $bp-medium + 1) {
     .nav-primary {
         display: block;
-        margin-top: 15px;
     }
 
 }
@@ -107,7 +106,11 @@
  * General Navigation Styles
  * ============================================ */
 
-$nav-primary-height: 30px;
+$nav-primary-height: 50px;
+
+nav {
+    background: white;
+}
 
 .nav-primary {
     a {
@@ -117,6 +120,8 @@ $nav-primary-height: 30px;
         color: $c-text;
         line-height: $nav-primary-height;
         font-family: $f-stack-special;
+        font-size: 12px;
+        font-weight: bold;
     }
 
     li {
